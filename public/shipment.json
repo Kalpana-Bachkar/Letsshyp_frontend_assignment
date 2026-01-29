@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "trackingNumber": "LS-TRK-1001",
+    "status": "Pending",
+    "lastLocation": "Warehouse A",
+    "estimatedDelivery": "2026-01-29",
+    "sender": "Urban Retail Pvt Ltd",
+    "receiver": "Rahul Sharma"
+  },
+  {
+    "id": 2,
+    "trackingNumber": "LS-TRK-1002",
+    "status": "In Transit",
+    "lastLocation": "Hub Pune Central",
+    "estimatedDelivery": "2026-01-28",
+    "sender": "QuickShip Logistics",
+    "receiver": "Neha Verma"
+  },
+  {
+    "id": 3,
+    "trackingNumber": "LS-TRK-1003",
+    "status": "Out for Delivery",
+    "lastLocation": "Last Mile Facility - Baner",
+    "estimatedDelivery": "2026-01-27",
+    "sender": "TechZone Store",
+    "receiver": "Amit Kulkarni"
+  },
+  {
+    "id": 4,
+    "trackingNumber": "LS-TRK-1004",
+    "status": "Delivered",
+    "lastLocation": "Delivered to Customer",
+    "estimatedDelivery": "2026-01-26",
+    "sender": "FreshMart",
+    "receiver": "Sneha Patil"
+  },
+  {
+    "id": 5,
+    "trackingNumber": "LS-TRK-1005",
+    "status": "Cancelled",
+    "lastLocation": "Pickup Location - Wakad",
+    "estimatedDelivery": "2026-01-30",
+    "sender": "BookWorld",
+    "receiver": "Rohan Deshmukh"
+  },
+  {
+    "id": 6,
+    "trackingNumber": "LS-TRK-1006",
+    "status": "In Transit",
+    "lastLocation": "Distribution Center - Mumbai",
+    "estimatedDelivery": "2026-01-31",
+    "sender": "ElectroMart",
+    "receiver": "Priya Singh"
+  },
+  {
+    "id": 7,
+    "trackingNumber": "LS-TRK-1007",
+    "status": "Pending",
+    "lastLocation": "Warehouse B",
+    "estimatedDelivery": "2026-02-01",
+    "sender": "Fashion Hub Ltd",
+    "receiver": "Vikram Patel"
+  },
+  {
+    "id": 8,
+    "trackingNumber": "LS-TRK-1008",
+    "status": "Delivered",
+    "lastLocation": "Delivered to Customer",
+    "estimatedDelivery": "2026-01-25",
+    "sender": "HomeDecor Plus",
+    "receiver": "Anjali Menon"
+  },
+  {
+    "id": 9,
+    "trackingNumber": "LS-TRK-1009",
+    "status": "Out for Delivery",
+    "lastLocation": "Last Mile Facility - Andheri",
+    "estimatedDelivery": "2026-01-29",
+    "sender": "GroceryOnline",
+    "receiver": "Arjun Gupta"
+  },
+  {
+    "id": 10,
+    "trackingNumber": "LS-TRK-1010",
+    "status": "In Transit",
+    "lastLocation": "Hub Bangalore Central",
+    "estimatedDelivery": "2026-02-02",
+    "sender": "TechStore India",
+    "receiver": "Divya Sharma"
+  }
+]
