@@ -22,15 +22,9 @@ function ShipmentCard({shipment,status}) {
         {/* Details */}
         <div className="space-y-3 text-gray-700">
 
-          <div className="flex justify-between">
-            <span className="font-semibold">Sender</span>
-            <span>{shipment.sender}</span>
-          </div>
+        
 
-          <div className="flex justify-between">
-            <span className="font-semibold">Receiver</span>
-            <span>{shipment.receiver}</span>
-          </div>
+         
 
           <div className="flex justify-between">
             <span className="font-semibold">Last Location</span>
