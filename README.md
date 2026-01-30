@@ -1,140 +1,94 @@
-📦 Shipment Dashboard – Mock Tracking App
+# 📦 Shipment Dashboard – Mock Tracking App
 
-A simple React-based shipment tracking dashboard that displays mock shipment data, supports filtering, caching, and basic validation/error handling.
+A simple **React-based** shipment tracking dashboard that displays mock shipment data, supports filtering, caching, and robust validation/error handling.
 
-🚀 Getting Started
-✅ Prerequisites
+---
 
-Make sure you have installed:
+## 🚀 Getting Started
 
-Node.js (v16+ recommended)
+### ✅ Prerequisites
+Before you begin, ensure you have the following installed:
+* **Node.js** (v16+ recommended)
+* **npm**
 
-npm
+### ▶️ Steps to Run the Application
 
-▶️ Steps to Run the Application
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
 
-Clone the repository
+2.  **Navigate & Install Dependencies**
+    Open your terminal in the project folder and run:
+    ```bash
+    cd letsshyp_assignment
+    npm install
+    ```
 
-git clone <repo-name>
+3.  **Start the Development Server**
+    ```bash
+    npm run dev
+    ```
 
+4.  **Open in Browser**
+    Visit [http://localhost:5173/](http://localhost:5173/) to view the app.
 
-Open the project in Visual Studio Code
+---
 
-Install dependencies
+## 🧭 Using the Application
 
-Open terminal in the project folder and run:
+### 📄 Mock Data Location
+The shipment data is managed via a JSON file located at:
+`./letsshyp_assignment/data/shipmentData.json`
 
-cd letsshyp_assignment
-npm install
+### 🏠 Home Page Features
+The dashboard displays a comprehensive shipment list including:
+* **Tracking ID**
+* **Shipment Status**
+* **Last Location**
+* **Estimated Delivery**
+* **View Details Button** (Navigation to individual shipment)
 
+### 🔍 Shipment Details Page
+Deep-dive into specific shipment metrics:
+* **Sender/Receiver Info**
+* **Detailed Status Updates**
+* **Location History**
 
-Start the development server
+---
 
-npm run dev
+## 🔄 Data Management & Error Handling
 
+### Reloading Mock Data
+If you modify the source JSON file:
+1.  Update `./letsshyp_assignment/data/shipmentData.json`.
+2.  Click the **Reload Shipments** button in the UI.
+3.  The app will bypass the cache and display the updated data.
 
-Open in browser
+### ⚠️ Error Handling
+The application includes a validation layer. If the mock data is corrupted or incorrect:
+* **Triggers:** Missing required fields, incorrect JSON structure, or invalid data formats.
+* **Result:** The UI will intercept the error and display a user-friendly error message rather than crashing.
 
-http://localhost:5173/
+---
 
-🧭 Using the Application
-📄 Mock Data Location
+## ✨ Features & Tech Stack
 
-Shipment mock data is stored at:
+### Key Features
+* **Status-based Filtering:** Quickly sort through shipments.
+* **LocalStorage Caching:** Persistent data between refreshes.
+* **Loading States:** Simulated fetch delays for a realistic UX.
+* **Responsive Design:** Fully mobile-friendly via Tailwind CSS.
 
-./letsshyp_assignment/data/shipmentData.json
+### 🛠 Tech Stack
+* **Framework:** React.js
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS
+* **Storage:** Browser LocalStorage
 
-🏠 Home Page Features
+---
 
-Displays shipment list with:
-
-Tracking ID
-
-Shipment Status
-
-Last Location
-
-Estimated Delivery
-
-View Details button
-
-🔍 Shipment Details Page
-
-Click View Details to see:
-
-Tracking ID
-
-Shipment Status
-
-Sender Info
-
-Receiver Info
-
-Last Location
-
-Estimated Delivery
-
-🔄 Reloading Mock Data
-
-If you update the mock JSON:
-
-Modify:
-
-./letsshyp_assignment/data/shipmentData.json
-
-
-Click Reload Shipments button
-
-✅ Updated data will be displayed
-
-⚠️ Error Handling
-
-If mock data is incorrect (e.g., missing required fields):
-
-Modify JSON with invalid structure
-
-Click Reload Shipments
-
-❌ App will show an error message
-
-Example cases:
-
-Missing fields
-
-Incorrect structure
-
-Invalid data format
-
-✨ Features
-
-Shipment listing dashboard
-
-Status-based filtering
-
-LocalStorage caching
-
-Loading state simulation
-
-Basic data validation
-
-Error handling for invalid data
-
-Responsive UI (Tailwind CSS)
-
-🛠 Tech Stack
-
-React.js
-
-Vite
-
-Tailwind CSS
-
-LocalStorage for caching
-
-📌 Notes
-
-Mock fetch is simulated for demo purposes
-
-Cache clears on reload button click
-
-Validation ensures required shipment fields exist
+## 📌 Notes
+* **Mock Fetch:** Data fetching is simulated to demonstrate real-world asynchronous patterns.
+* **Cache Policy:** The LocalStorage cache is cleared specifically when the "Reload" button is triggered.
+* **Validation:** Ensures all mandatory shipment fields exist before rendering.
