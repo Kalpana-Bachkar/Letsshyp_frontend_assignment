@@ -6,7 +6,7 @@ export default function ShipmentDetail() {
   const [shipment, setShipment] = useState(null);
 
   useEffect(() => {
-    fetch("/shipment.json")
+    fetch("/data/shipmentData.json")
       .then(res => res.json())
       .then(data => {
         const s = data.find(item => item.id == id);
@@ -15,7 +15,7 @@ export default function ShipmentDetail() {
   }, [id]);
 
   if (!shipment)
-    return <h2 className="p-6 text-center">Shipment not found</h2>;
+    return <h2 className="min-h-screen flex justify-center items-center text-3xl font-mono bg-gray-400">Shipment not found</h2>;
 
   const statusColor =
     shipment.status === "Delivered"
@@ -43,7 +43,7 @@ export default function ShipmentDetail() {
       <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-lg">
 
         {/* Header */}
-        <div className="mb-6 text-center">
+        <div className="mb-6 ">
           <h2 className="text-2xl font-bold text-blue-600">
             {shipment.trackingNumber}
           </h2>

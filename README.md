@@ -1,76 +1,140 @@
-🚀 Features
+📦 Shipment Dashboard – Mock Tracking App
 
-Shipment list view
+A simple React-based shipment tracking dashboard that displays mock shipment data, supports filtering, caching, and basic validation/error handling.
 
-Shipment detail page
+🚀 Getting Started
+✅ Prerequisites
 
-Status filter (Pending, In Transit, Delivered, etc.)
+Make sure you have installed:
 
-LocalStorage caching (to avoid refetching)
+Node.js (v16+ recommended)
 
-Clear cache button
+npm
 
-Loading state with delay simulation
+▶️ Steps to Run the Application
 
-Responsive UI using Tailwind CSS
+Clone the repository
 
-Routing with React Router
+git clone <repo-name>
 
-🛠️ Tech Stack
 
-React
+Open the project in Visual Studio Code
+
+Install dependencies
+
+Open terminal in the project folder and run:
+
+cd letsshyp_assignment
+npm install
+
+
+Start the development server
+
+npm run dev
+
+
+Open in browser
+
+http://localhost:5173/
+
+🧭 Using the Application
+📄 Mock Data Location
+
+Shipment mock data is stored at:
+
+./letsshyp_assignment/data/shipmentData.json
+
+🏠 Home Page Features
+
+Displays shipment list with:
+
+Tracking ID
+
+Shipment Status
+
+Last Location
+
+Estimated Delivery
+
+View Details button
+
+🔍 Shipment Details Page
+
+Click View Details to see:
+
+Tracking ID
+
+Shipment Status
+
+Sender Info
+
+Receiver Info
+
+Last Location
+
+Estimated Delivery
+
+🔄 Reloading Mock Data
+
+If you update the mock JSON:
+
+Modify:
+
+./letsshyp_assignment/data/shipmentData.json
+
+
+Click Reload Shipments button
+
+✅ Updated data will be displayed
+
+⚠️ Error Handling
+
+If mock data is incorrect (e.g., missing required fields):
+
+Modify JSON with invalid structure
+
+Click Reload Shipments
+
+❌ App will show an error message
+
+Example cases:
+
+Missing fields
+
+Incorrect structure
+
+Invalid data format
+
+✨ Features
+
+Shipment listing dashboard
+
+Status-based filtering
+
+LocalStorage caching
+
+Loading state simulation
+
+Basic data validation
+
+Error handling for invalid data
+
+Responsive UI (Tailwind CSS)
+
+🛠 Tech Stack
+
+React.js
 
 Vite
 
 Tailwind CSS
 
-React Router
+LocalStorage for caching
 
-Local JSON data (mock data)
+📌 Notes
 
-📂 Project Structure
- |public/
- |     |---shipment.json
-src/
- ├── pages/
- │   ├── ShipmentList.jsx
- │   ├── ShipmentDetail.jsx
- │
- ├
- │
- ├── App.jsx
- ├── main.jsx
+Mock fetch is simulated for demo purposes
 
-▶️ How to Run
-1️⃣ Install dependencies
-npm install
+Cache clears on reload button click
 
-2️⃣ Start dev server
-npm run dev
-
-
-App runs on:
-
-http://localhost:5173
-
-📦 Data Source
-
-Shipment data is loaded from:
-
-/public/shipment.json
-
-
-
-⚠️ Notes
-
-No backend used
-
-No database integration
-
-Focus is on UI, routing, and state handling
-
-Fetch delay added to simulate API call
-
-🙋 Author
-
-Kalpana B
+Validation ensures required shipment fields exist
