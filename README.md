@@ -1,16 +1,76 @@
-# React + Vite
+🚀 Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shipment list view
 
-Currently, two official plugins are available:
+Shipment detail page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Status filter (Pending, In Transit, Delivered, etc.)
 
-## React Compiler
+LocalStorage caching (to avoid refetching)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clear cache button
 
-## Expanding the ESLint configuration
+Loading state with delay simulation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive UI using Tailwind CSS
+
+Routing with React Router
+
+🛠️ Tech Stack
+
+React
+
+Vite
+
+Tailwind CSS
+
+React Router
+
+Local JSON data (mock data)
+
+📂 Project Structure
+ |public/
+ |     |---shipment.json
+src/
+ ├── pages/
+ │   ├── ShipmentList.jsx
+ │   ├── ShipmentDetail.jsx
+ │
+ ├
+ │
+ ├── App.jsx
+ ├── main.jsx
+
+▶️ How to Run
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Start dev server
+npm run dev
+
+
+App runs on:
+
+http://localhost:5173
+
+📦 Data Source
+
+Shipment data is loaded from:
+
+/public/shipment.json
+
+
+
+⚠️ Notes
+
+No backend used
+
+No database integration
+
+Focus is on UI, routing, and state handling
+
+Fetch delay added to simulate API call
+
+🙋 Author
+
+Kalpana B
